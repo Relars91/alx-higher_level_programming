@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import sys
-if __name__ == "__main__":
-    n = len(sys.argv)
+def infinite(args):
     sum = 0
-    for i in range(1, n):
-        sum += int(sys.argv[i])
-        print(sum)
+    for a in args[1:]:
+        sum += int(a)
+    print(sum)
+
+if __name__ == "__main__":
+    import sys
+    infinite(sys.argv)

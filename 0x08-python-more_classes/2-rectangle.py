@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Defines a rectangle class."""
 class Rectangle:
     """Represent a rectangle."""
 
@@ -20,7 +20,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        if not isinstance(value, int):
+        if not isinstance(value, int):i
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
